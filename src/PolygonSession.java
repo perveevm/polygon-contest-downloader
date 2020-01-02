@@ -72,13 +72,22 @@ public class PolygonSession {
             JSONObject test = jsonTests.getJSONObject(i);
 
             boolean isGenerated = !test.getBoolean("manual");
-            String group = test.getString("group");
-            int points = (int)test.getDouble("points");
+            boolean hasGroup = test.has("group");
+            boolean hasPoints = test.has("points");
+
+            int points = 0;
+            String group = null;
             String scriptLine = null;
 
             if (isGenerated) {
                 scriptLine = test.getString("scriptLine");
                 System.out.println(scriptLine);
+            }
+            if (hasGroup) {
+                group = test.getString("group");
+            }
+            if (hasPoints) {
+                points = (int)test.getDouble("points");
             }
 
             tests.add(new Test(scriptLine, group, points));

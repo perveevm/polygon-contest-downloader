@@ -1,4 +1,4 @@
-# Utility that downloads Polygon packages and represents them in Ejudge format
+# Polygon2Ejudge
 
 ## Usage
 1. Create your API key in Polygon (it can be done in Settings), then put your Key and Secret in `scripts/build-contest.sh`

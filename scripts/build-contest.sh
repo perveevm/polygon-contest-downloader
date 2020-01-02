@@ -40,3 +40,7 @@ do
 	./generate-answers.sh ${CONTEST_PATH}/problems/${PROBLEM}
 	./clean-up.sh ${CONTEST_PATH}/problems/${PROBLEM}
 done
+
+rm ${CONTEST_PATH}/*.zip
+rm ${CONTEST_PATH}/*.script
+rm ${CONTEST_PATH}/*.solution

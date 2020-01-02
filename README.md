@@ -2,7 +2,7 @@
 
 ## Usage
 1. Create your API key in Polygon (it can be done in Settings), then put your Key and Secret in `scripts/build-contest.sh`
-2. Execute `scripts/build-contest.sh` with two arguments: path where utility will create directories with problems and additional files, and ID of your contest in Polygon
+2. Execute `scripts/build-contest.sh` with two arguments: contest path where all problems should be moved, and contest ID in Polygon
 3. Have fun
 
 ## TODO list

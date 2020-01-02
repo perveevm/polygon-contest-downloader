@@ -11,7 +11,7 @@ fi
 
 mkdir ${CONTEST_PATH}/problems
 
-java -jar polygon-contest-downloader.jar <put your key here> <put your secret here> ${CONTEST_ID} ${CONTEST_PATH}
+java -Xmx1024m -Xms256m -jar polygon-contest-downloader.jar <put your key here> <put your secret here> ${CONTEST_ID} ${CONTEST_PATH}
 
 for PROBLEM in $(ls ${CONTEST_PATH} | grep .zip | sed "s/.zip//")
 do
